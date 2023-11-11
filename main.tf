@@ -15,3 +15,8 @@ variable bucket_name {
 variable "baseline_tags" {
   type = map(string)
 }
+
+variable "force_destroy" {
+    type = bool
+    
+}
