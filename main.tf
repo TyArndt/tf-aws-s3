@@ -5,7 +5,7 @@ resource "aws_s3_bucket" "this" {
 
 module "tags" {
     source = "git::https://github.com/TyArndt/tf-aws-tags.git"
-    baseline_tags = local.baseline_tags
+    baseline_tags = var.baseline_tags
 }
 
 variable bucket_name {
